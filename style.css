@@ -1,13 +1,13 @@
+
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #070707; /* Light orange background reminiscent of sand */
+    background-color: #333; /* Light orange background reminiscent of sand */
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 90%;
-    margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -19,7 +19,7 @@ body {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .title, .date {
@@ -53,13 +53,15 @@ body {
     background-color: #0056b3;
 }
 
-.footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+/* CSS for larger screens (tablets and laptops) */
+@media only screen and (min-width: 600px) {
+    .container {
+        max-width: 90%;
+        margin: 20px auto;
+    }
 }
+
+/* CSS for footer */
 .footer {
     text-align: center;
     margin-top: 20px;
@@ -70,13 +72,17 @@ body {
 }
 
 .footer-logo {
-    width: 200px; /* Adjust width as needed */
+    width: 150px; /* Adjust width as needed */
     height: auto;
     position: absolute;
-    bottom: 150%; /* Adjust vertical position as needed */
-    left: 80%; /* Center the logo horizontally */
-    transform: translateX(-50%);
+    bottom: 40px; /* Adjust vertical position as needed */
+    right: 40px; /* Adjust horizontal position as needed */
 }
+
 .footer .copyright {
     font-size: 0.8em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
