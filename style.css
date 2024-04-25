@@ -76,7 +76,7 @@ body {
     height: auto;
     position: absolute;
     bottom: 40px; /* Adjust vertical position as needed */
-    right: 40px; /* Adjust horizontal position as needed */
+    right: 25px; /* Adjust horizontal position as needed */
 }
 
 .footer .copyright {
